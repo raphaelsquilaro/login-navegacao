@@ -20,7 +20,7 @@ class Login extends StatelessWidget {
         child: Column(
           children: [
             // Título
-            Text('Acesso ao Sistema', style: TextStyle(fontSize: 25)),
+            Text('Acesso ao Sistema', style: TextStyle(fontSize: 25, color: Color(0xFF5D6D7E))),
 
             SizedBox(height: 20),
 
@@ -53,6 +53,10 @@ class Login extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => Home()),
                 );
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xFF283747),
+                foregroundColor: Colors.white
+              ),
               child: Text('ENTRAR'),
             ),
           ],
